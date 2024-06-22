@@ -1,6 +1,5 @@
 import 'package:assignment_reposoft/screens/home_screen.dart';
 import 'package:assignment_reposoft/screens/sign_up.dart';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -179,6 +178,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      obscureText: (hintText == "Password") ? true : false,
       controller: controller,
       decoration: InputDecoration(
         hintText: hintText,
